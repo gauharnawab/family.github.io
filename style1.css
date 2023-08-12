@@ -1,0 +1,206 @@
+/* Styles for the navigation */
+.navbar {
+    background: linear-gradient(to right, #87CEEB, #FF6B6B);
+}
+
+.navbar-brand img {
+    max-height: 55px;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    transition: color 0.3s;
+    padding: 0;
+    position: relative;
+}
+
+.navbar-nav .nav-link p {
+    margin: 0;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover p {
+    color: #f9c300;
+}
+
+/* Styles for the home page */
+#home {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#home p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    opacity: 1;
+    transition: color 0.3s, opacity 0.3s; 
+}
+
+#home img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Apply circular mask */
+    transition: border-radius 0.3s, box-shadow 0.3s; /* Add transition to circular mask and shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Initial shadow */
+}
+
+#home img:hover {
+    border-radius: 10%; /* Change circular mask on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+
+
+/* Family Gallery Section */
+#carouselExampleControls {
+    margin-top: 40px;
+    margin-left: auto; /* Move carousel to the center of the screen horizontally */
+    margin-right: auto;
+    overflow: hidden; /* Hide overflow to contain images */
+    max-width: 115%; 
+    max-height: 50%;
+}
+
+.carousel-inner {
+    display: flex; /* Use flexbox for centering */
+}
+
+.carousel-item {
+    flex: 0 0 calc(100% - 20px); /* Adjust width with spacing on both sides */
+    margin: 0 10px; /* Add margin to images for spacing */
+    height: 50%;
+    border: 15px solid #fff; /* Increase border width further */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Add transitions */
+}
+
+.carousel-item img {
+    max-width: 140%;
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover container with image */
+}
+
+.carousel-item img:hover {
+    border-color: #f9c300; /* Change border color on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* CSS for News and Updates section */
+/* CSS for News and Updates section */
+#newsList {
+    margin-top: 30px;
+}
+
+#newsList .card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#newsList .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#newsList h2 {
+    font-size: 28px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+#newsList h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#newsList p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+/* Additional CSS for Quotes Section */
+#quotes {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.quotes-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.quotes-section p {
+    font-size: 18px;
+    color: #f2ebeb; /* Change the color of the quotes */
+    line-height: 1.6;
+    opacity: 1;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+/* Add right side flowers transition */
+.quotes-section {
+    background-image: url('Images/blur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    position: relative;
+}
+
+/* Transition for right side flowers */
+.quotes-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.9));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.quotes-section:hover::after {
+    transform: scaleX(1);
+}
+/* Margin between sections */
+#home {
+    margin-bottom: 50px; /* Add margin at the bottom of the Home Page section */
+}
+
+#quotes {
+    padding-top: 50px; /* Add padding at the top of the Quotes Section */
+    padding-bottom: 50px; /* Add padding at the bottom of the Quotes Section */
+}
