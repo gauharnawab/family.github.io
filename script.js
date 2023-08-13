@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Sample news data
     var newsData = [
         { title: "Important Announcement", content: "Welcome to our family website." },
+        { title: "Site Purpose",content:"This site for convey the information from one place to another"}
     ];
 
     // Display news items
