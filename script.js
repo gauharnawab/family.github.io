@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Sample news data
     var newsData = [
-        { title: "Important Announcement", content: "Welcome to our family website." }
+        { title: "Important Announcement", content: "Welcome to Gauhar Nawab Home." }
     ];
 
     // Display news items
